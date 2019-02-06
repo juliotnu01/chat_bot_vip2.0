@@ -14,10 +14,8 @@ class BotManController extends Controller
     public function handle()
     {
         $botman = app('botman');
-        // $botman->hears('hey', BotManController::class.'@startConversation');
-        $botman->on('messages', function($payload, $bot) {
-            echo "escuchando";
-        });
+        $botman->hears('hey', BotManController::class.'@startConversation');
+       
 
         $botman->listen();
         
