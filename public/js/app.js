@@ -52069,7 +52069,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
         axios.post('/botman').then(function (res) {
-            console.log(res.messages);
+            console.log(res);
         }).catch(function (err) {
             console.log(err);
         });

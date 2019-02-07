@@ -154,7 +154,11 @@
                 <div class="control">
                   <input class="input" type="text" placeholder="Search in Google">
                 </div>
-              </div>
+
+            @foreach ($botman as $bot)
+              <?php dd($bot) ?>
+            @endforeach
+            </div>
         </div>
     </div>
 
@@ -163,7 +167,7 @@
    
         new Vue({
             el: '#app',
-           
+
         });
         
     </script>
